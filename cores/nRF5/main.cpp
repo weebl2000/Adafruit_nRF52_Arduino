@@ -39,7 +39,12 @@ void Bluefruit_printInfo() {}
 void initVariant() __attribute__((weak));
 void initVariant() { }
 
+// Allow the loop_task stack size to be overridden from the build (e.g.
+// -DLOOP_STACK_SZ=2048 in platformio.ini). The default 1024 words (4KB) is too
+// small for some sketches (e.g. deep LittleFS file-open call chains run from loop()).
+#ifndef LOOP_STACK_SZ
 #define LOOP_STACK_SZ       (256*4)
+#endif
 #define CALLBACK_STACK_SZ   (256*3)
 
 static TaskHandle_t  _loopHandle;

@@ -25,3 +25,6 @@
 /boards.local.txt
 /platform.local.txt
 
+# Locally-installed arduino-cli (for building)
+/bin/
+

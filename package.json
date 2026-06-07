@@ -1,5 +1,10 @@
 {
   "name": "framework-arduinoadafruitnrf52",
-  "version": "1.10700.1",
-  "description": "Arduino framework for Adafruit nRF52 boards (MeshCore fork with LittleFS v1.7.2 and Bluefruit fixes)"
+  "version": "1.10701.0",
+  "description": "Arduino framework for Adafruit nRF52 boards (MeshCore fork with LittleFS v1.7.2 and Bluefruit fixes)",
+  "url": "https://github.com/weebl2000/Adafruit_nRF52_Arduino",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weebl2000/Adafruit_nRF52_Arduino"
+  }
 }
